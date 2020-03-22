@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Platzi</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      .hero {
+        background-color: #23475b;
+        color: white;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+        justify-content: center;
+      }
+      .hero-container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 100px 1fr 300px;
+        grid-template-areas:
+          "badge title form"
+          ". description form"
+          ". countdown form";
+      }
+      .badge {
+        grid-area: badge;
+      }
+      .badge > img {
+        max-width: 100px;
+      }
+      .title {
+        grid-area: title;
+        font-size: 36px;
+      }
+      .form {
+        grid-area: form;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #dbdbe2;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      .form p {
+        color: #3a3b3f;
+      }
+      .form button {
+        background-color: #98ca3f;
+        padding: 5px;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        border-bottom: 5px solid #6d932b;
+      }
+      .description {
+        grid-area: description;
+      }
+      .countdown {
+        grid-area: countdown;
+      }
+      .countdown p {
+        text-align: center;
+      }
+      .countdown span:after {
+        content: ':';
+      }
+      .countdown span:last-child:after {
+        content: '';
+      }
+      @media screen and (max-width: 768px) {
+        .hero-container {
+          grid-template-columns: 100px 1fr;
+          grid-template-areas:
+            "badge title"
+            "description description"
+            "form form"
+            "countdown countdown";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-container">
+        <div class="badge"><img src="images/badge.png" alt="" /></div>
+        <h1 class="title">Curso de React.js</h1>
+        <div class="description">
+          <p>
+            React es una de las librerías más utilizadas hoy en día para crear
+            aplicaciones web. En este curso podrás dominar la creación de
+            aplicaciones a través de un proyecto que te ayudará a explotar todas
+            las capacidades de esta librería.
+          </p>
+        </div>
+        <form action="" class="form">
+          <p class="title-form">Regístrate a Platzi</p>
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Email" />
+          <button type="submit">Comienza ahora</button>
+        </form>
+        <div class="countdown">
+          <p>Lanzamiento</p>
+          <p>
+            <span>01d</span>
+            <span>03h</span>
+            <span>09m</span>
+            <span>05s</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

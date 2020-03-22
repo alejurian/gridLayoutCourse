@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Instagram</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .post-link {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 293px));
+        gap: 28px;
+        justify-content: center;
+      }
+      .post {
+        position: relative;
+        cursor: pointer;
+      }
+      .post-img {
+        margin: 0;
+      }
+      .post-img > img {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .post-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        margin: 0;
+        color: rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        align-items: center;
+      }
+      .post-content:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+      }
+      p > span {
+        margin: 0 20px;
+      }
+      @media screen and (max-width: 768px) {
+        .post-link {
+          gap: 3px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post-link">
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/56842795_574221616419552_4351947325740941312_o.jpg?_nc_cat=107&_nc_sid=6e5ad9&_nc_ohc=FtcWvOxu1ZMAX_AXQsG&_nc_ht=scontent-scl1-1.xx&oh=efb27743dc09f44d6ab19be0e98bcef5&oe=5E956F72"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2018/11/Blog_design_dev.jpg.webp"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://getwebsitefix.com/wp-content/uploads/2019/10/web-developer-skills-768x512.jpeg"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/56842795_574221616419552_4351947325740941312_o.jpg?_nc_cat=107&_nc_sid=6e5ad9&_nc_ohc=FtcWvOxu1ZMAX_AXQsG&_nc_ht=scontent-scl1-1.xx&oh=efb27743dc09f44d6ab19be0e98bcef5&oe=5E956F72"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2018/11/Blog_design_dev.jpg.webp"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://getwebsitefix.com/wp-content/uploads/2019/10/web-developer-skills-768x512.jpeg"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/56842795_574221616419552_4351947325740941312_o.jpg?_nc_cat=107&_nc_sid=6e5ad9&_nc_ohc=FtcWvOxu1ZMAX_AXQsG&_nc_ht=scontent-scl1-1.xx&oh=efb27743dc09f44d6ab19be0e98bcef5&oe=5E956F72"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2018/11/Blog_design_dev.jpg.webp"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://getwebsitefix.com/wp-content/uploads/2019/10/web-developer-skills-768x512.jpeg"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/56842795_574221616419552_4351947325740941312_o.jpg?_nc_cat=107&_nc_sid=6e5ad9&_nc_ohc=FtcWvOxu1ZMAX_AXQsG&_nc_ht=scontent-scl1-1.xx&oh=efb27743dc09f44d6ab19be0e98bcef5&oe=5E956F72"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2018/11/Blog_design_dev.jpg.webp"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+      <div class="post">
+        <figure class="post-img">
+          <img
+            src="https://getwebsitefix.com/wp-content/uploads/2019/10/web-developer-skills-768x512.jpeg"
+            alt="Web Developer"
+          />
+        </figure>
+        <p class="post-content">
+          <span class="post-likes">15 <i class="icon-heart"></i></span>
+          <span class="post-comments"
+            >3 <i class="icon-message-square"></i
+          ></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

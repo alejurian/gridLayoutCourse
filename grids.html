@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: [start] 3fr [end1fstSct] 1fr [row4] 1fr [end2ndtSct] 1fr [row6] 1fr [end] 1fr;
+        grid-template-rows: [start] 1fr [endSct] 1fr [end] 1fr;
+      }
+
+      .item:first-child {
+        grid-column: start / end1fstSct;
+        grid-row: start / end;
+      }
+
+      .item:nth-child(2) {
+        grid-column: end1fstSct / end2ndtSct;
+        grid-row: start / end;
+      }
+
+      .item:nth-child(3) {
+        grid-column: end2ndtSct / end;
+        grid-row: start / endSct;
+      }
+
+      .item:nth-child(4) {
+        grid-column: end2ndtSct / row6;
+        grid-row: endSct / end;
+      }
+
+      .item:last-child {
+        grid-column: row6 / end;
+        grid-row: endSct / end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Contenido #1</div>
+      <div class="item">Contenido #2</div>
+      <div class="item">Contenido #3</div>
+      <div class="item">Contenido #4</div>
+      <div class="item">Contenido #5</div>
+    </div>
+  </body>
+</html>
